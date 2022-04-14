@@ -191,11 +191,6 @@
     background-color: var(--black);
   }
   
-  .loader {
-    width: 9rem;
-    height: 9rem;
-    background: center / contain no-repeat url(../img/loader.gif);
-  }
   
   ::selection {
     color: var(--soapstone);

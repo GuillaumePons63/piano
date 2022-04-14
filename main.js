@@ -1,5 +1,8 @@
 "use strict";
 
+window.addEventListener("DOMContentLoaded", () => {
+  
+
 window.addEventListener("keydown", (e) => {
   const key = document.querySelector(`.key[data-note="${e.key}"]`);
   const audio = document.querySelector(`audio[data-note="${e.key}"]`);
@@ -7,6 +10,7 @@ window.addEventListener("keydown", (e) => {
   audio.currentTime = 0;
   audio.play();
   key.classList.add("playing");
+  
 });
 
 window.addEventListener("click", (e) => {
@@ -26,13 +30,4 @@ function removeStyle() {
   this.classList.remove("playing");
 }
 
-// loader
-$(window).on("load", () => {
-  setTimeout(removeLoader, 1600);
 });
-
-function removeLoader() {
-  $("#loadingDiv").fadeOut(500, () => {
-    $("#loadingDiv").remove();
-  });
-}
