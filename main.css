@@ -16,20 +16,15 @@
     --font-family: "Source Serif Pro", serif;
   }
   
-  * {
+ #main {
     margin: 0;
     padding: 0;
     border: none;
     outline: none;
     box-sizing: border-box;
-  }
-  
-  html {
-    font-size: 10px;
-  }
-  
-  body {
     overflow: hidden;
+    width:100%;
+    max-width: 1400px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -42,6 +37,8 @@
       var(--bg-color)
     );
   }
+  
+
   
   .keys {
     height: 79vh;
@@ -94,7 +91,7 @@
     margin-top: -0.1rem !important;
     position: absolute !important;
     height: 45% !important;
-    width: 6rem;
+    width: 5%;
     background-image: linear-gradient(
       -20deg,
       var(--dark-jungle-green),
@@ -110,27 +107,27 @@
   }
   
   .sharp[data-note="z"] {
-    margin-right: 74.5rem;
+    margin-right: 80%;
   }
   
   .sharp[data-note="e"] {
-    margin-right: 55.5rem;
+    margin-right: 60%;
   }
   
   .sharp[data-note="t"] {
-    margin-right: 18.5rem;
+    margin-right: 20%;
   }
   
   .sharp[data-note="u"] {
-    margin-left: 19rem;
+    margin-left: 20%;
   }
   
   .sharp[data-note="o"] {
-    margin-left: 55.5rem;
+    margin-left: 60%;
   }
   
   .sharp[data-note="p"] {
-    margin-left: 74.5rem;
+    margin-left: 80%;
   }
   
   .sharp:active,
@@ -140,56 +137,8 @@
     cursor: grabbing;
   }
   
-  main,
-  footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: var(--onyx);
-  }
-  
-  footer {
-    margin-bottom: 1.1rem;
-  }
-  
-  .title {
-    font-size: 4.3rem;
-    text-transform: uppercase;
-    letter-spacing: 0.3rem;
-    word-spacing: 0.1rem;
-  }
-  
-  .subtitle {
-    font-size: 1.9rem;
-    margin-top: 0.1rem;
-  }
-  
-  .footer-text {
-    font-size: 1.5rem;
-    font-style: italic;
-  }
-  
-  .footer-link {
-    text-decoration: none;
-    color: var(--onyx);
-    font-weight: 600;
-  }
-  
-  .footer-link:hover {
-    color: var(--ironside-grey);
-    transition: var(--secondary-transition);
-  }
-  
-  #loadingDiv {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 100;
-    width: 100vw;
-    height: 100vh;
-    position: absolute;
-    background-color: var(--black);
-  }
+
+
   
   
   ::selection {
@@ -198,43 +147,43 @@
   }
   
   @media screen and (max-width: 1000px) {
-    html {
+    #main {
       font-size: 9px;
     }
   }
   
   @media screen and (max-width: 900px) {
-    html {
+    #main {
       font-size: 8px;
     }
   }
   
   @media screen and (max-width: 800px) {
-    html {
+    #main {
       font-size: 7px;
     }
   }
   
   @media screen and (max-width: 680px) {
-    html {
+    #main {
       font-size: 6px;
     }
   }
   
   @media screen and (max-width: 580px) {
-    html {
+    #main {
       font-size: 5px;
     }
   }
   
   @media screen and (max-width: 480px) {
-    html {
+    #main {
       font-size: 4px;
     }
   }
   
   @media screen and (max-width: 380px) {
-    html {
+    #main {
       font-size: 3px;
     }
   }
